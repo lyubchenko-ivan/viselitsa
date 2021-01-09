@@ -1,4 +1,4 @@
 # viselitsa
 
 
-This is game maked for project oldnamecrud.ru
+This is game maked for project codenamecrud.ru
