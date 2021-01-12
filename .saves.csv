@@ -1,1 +1,7 @@
-id, player_name, good_word, good_letters, bad_letters
+ ; player_name; good_word; good_letters; bad_letters; attempts;
+1; Ivan; planet; ["a", "e"]; ["i", "k", "r", "o", "f"]; 5
+2; Ivan; unpractised; ["e", "i", "d"]; []; 0
+3; Ivan; felinity; ["e", "i"]; ["a", "k"]; 2
+4; Ivan; qingdao; ["i", "a"]; ["e"]; 1
+5; Viktor; carbuncle; ["", "e", "a"]; ["i", "d"]; 2
+6; Ivan; wimpishness; ["e", "i"]; ["a", "d"]; 2

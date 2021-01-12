@@ -25,7 +25,7 @@ module Game
   end
 
   class Player
-    attr_reader :name
+    attr_accessor :name
 
 
     def get_player_name
@@ -113,23 +113,20 @@ module Game
       end
       return false
     end
-    #доделать
+
+
     def save_game
-      File.open("saves.csv", 'a') do |file|
+      File.open(".saves.csv", 'a') do |file|
         file.puts(self.to_s)
       end
     end
-    #доделать
-    def to_s
-      return "#{self.save_id}"
-    end
 
-    #доделать
     private
-    def save_id
-      CSV.open (".saves.csv", headers: true, header_convert: :symbol) do |file|
-
+    def to_s
+      return "#{get_last_id}, #{self.player.name},#{$good_word}, #{$good_letters}, #{$bad_letters}, #{self.attempts}"
     end
+
+
 
   end
 
